@@ -6,13 +6,13 @@
 	$lista= array("ul", "Arbol", "aracataca", "Correo", "Tio", "ola");
 
 	function palabrasMasCorta($lista){	
-		$palabraLarga = $lista[0];
+		$palabraCorta = $lista[0];
 		for ($i=1; $i < count($lista); $i++) { 
-			if (strlen($lista[$i]) < strlen($palabraLarga)) {
-				$palabraLarga = $lista[$i];
+			if (strlen($lista[$i]) < strlen($palabraCorta)) {
+				$palabraCorta = $lista[$i];
 			}
 		}
-		return $palabraLarga;
+		return $palabraCorta;
 	}
 
 	function palabrasMasLarga($lista){
